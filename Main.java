@@ -1,4 +1,4 @@
-public class Algorithm
+public class Algorithm //4.1
 {
   public int numDigits(int x)
   {
@@ -13,13 +13,38 @@ public class Algorithm
   }
   public int sumOfOddRange(int x,int y)
   {
-    int z=x;
-    while (z>x && z<y)
+    int sum=0;
+    for (i=x, i<=y, i++)
     {
-      if (z%2)
+      if (i%2 !=0)
       {
-        x++; 
-      } else {
-        x+1;
-      
+        sum+=i;
+      }
+      sum+=0; 
+    }
+    return sum;
+   }
+  public int sumOfMultiple10Rage(int x, inty)
+  {
+    int sum=0;
+    for (i=x, i<=y, i++)
+    {
+      if (i%10 ==0)
+      {
+        sum+=i;
+      }
+      sum+=0; 
+    }
+    return sum;
+   }
+  public int sumOfDigits(int x)
+  {
+    int sum=0;
+    while(x>0)
+    {
+      sum+=x%10;
+      x=x/10;  
+    }
+    return sum;
+  }
 }
