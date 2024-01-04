@@ -54,11 +54,30 @@ public class Contents extends JPanel implements ActionListener{
           y = 1;
       }
   }
-  
+
+  //public void keyReleased(KeyEvent e) {
+
+  int xV=1;
+  int yV=1;
+
+  public void move(){
+    x+=xV;
+    y+=yV;
+    
+  }
+
   public void actionPerformed(ActionEvent e){
-    //x=x+1;
-    //y=y+1;
-    repaint();
+    move();
+    if (x==0){
+      xV=1;
+    } else if(x==900){
+      xV=-1;
+    }
+    if (y==0){
+      yV=1;
+    } else if(y==600){
+      yV=-1;
+    }
     repaint();
   }
 }
