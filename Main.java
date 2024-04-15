@@ -3,26 +3,24 @@ import java.util.ArrayList;
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println(Recursion.recurseFactorial(10));
-    System.out.println(Recursion.iterateFactorial(10));
-    System.out.println(Recursion.resurseString("Hello World"));
-    int[] ints = {1,2,34,5,50};
-    System.out.println(Recursion.resureseArray(ints,0));
-    ArrayList<Integer> intgrid = new ArrayList<>();
-    intgrid.add(12); intgrid.add(7); intgrid.add(8); intgrid.add(6); intgrid.add(2);
-    System.out.println(Recursion.resurseArrayList(intgrid,6));
+    System.out.println("Random int Array Method");
+    System.out.println(RecursiveSearchSort.createRanIntArray());
+
+    System.out.println("Binary Search Method");
+    System.out.println(RecursiveSearchSort.binarySearch(RecursiveSearchSort.createRanIntArray()));
 
 
 
 
 
-
-
-
-
-
-
-
+//    System.out.println(Recursion.recurseFactorial(10));
+//    System.out.println(Recursion.iterateFactorial(10));
+//    System.out.println(Recursion.resurseString("Hello World"));
+//    int[] ints = {1,2,34,5,50};
+//    System.out.println(Recursion.resureseArray(ints,0));
+//    ArrayList<Integer> intgrid = new ArrayList<>();
+//    intgrid.add(12); intgrid.add(7); intgrid.add(8); intgrid.add(6); intgrid.add(2);
+//    System.out.println(Recursion.resurseArrayList(intgrid,6));
 
     //Maze maze= new Maze();
 //    JFrame f = new JFrame();
